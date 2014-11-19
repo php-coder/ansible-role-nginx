@@ -13,6 +13,13 @@ Actions role
 * runs nginx
 * adds nginx to start on boot
 
+How to install
+--------------
+
+    ansible-galaxy install php-coder.nginx
+
+For more installation's options/variants read the documentation: http://docs.ansible.com/galaxy.html
+
 Example Playbook
 ----------------
 
