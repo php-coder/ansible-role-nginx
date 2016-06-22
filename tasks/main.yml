@@ -7,7 +7,7 @@
 
 - name: Add nginx repo
   apt_repository:
-    repo: 'deb http://nginx.org/packages/ubuntu/ trusty nginx'
+    repo: "deb http://nginx.org/packages/ubuntu/ {{ codename }} nginx"
     state: present
     update_cache: yes
 
