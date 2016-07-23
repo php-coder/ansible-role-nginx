@@ -6,6 +6,10 @@ Installs nginx from official repository at http://nginx.org (http://nginx.org/en
 Role Variables
 --------------
 
+* `remove_default_vhost`
+
+  Whether to remove default virtual host. Default is `no`.
+
 * `state`
 
   State of the service after installation. Possible values: `started`, `stopped`, `restarted`,
@@ -18,6 +22,7 @@ Actions role
 * adds repo
 * updates `apt`s cache
 * installs package
+* removes default virtual host (only when `remove_default_vhost` is set to `yes`)
 * runs nginx (default behavior that can be changed by `state` parameter)
 * adds nginx to start on boot
 

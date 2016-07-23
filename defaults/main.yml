@@ -1,3 +1,4 @@
 ---
 codename: xenial
+remove_default_vhost: no
 state: started
