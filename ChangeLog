@@ -1,3 +1,4 @@
+1.2
 - Added "remove_default_vhost" parameter.
 - Added "state" parameter.
 
