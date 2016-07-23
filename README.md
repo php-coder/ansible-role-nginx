@@ -3,6 +3,14 @@ Ansible role for Nginx installation
 
 Installs nginx from official repository at http://nginx.org (http://nginx.org/en/linux_packages.html#stable).
 
+Role Variables
+--------------
+
+* `state`
+
+  State of the service after installation. Possible values: `started`, `stopped`, `restarted`,
+  `reloaded`. Default is `started`.
+
 Actions role
 ------------
 
@@ -10,7 +18,7 @@ Actions role
 * adds repo
 * updates `apt`s cache
 * installs package
-* runs nginx
+* runs nginx (default behavior that can be changed by `state` parameter)
 * adds nginx to start on boot
 
 How to install

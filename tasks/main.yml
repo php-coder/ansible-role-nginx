@@ -19,6 +19,6 @@
 - name: Run and enable Nginx to start on boot
   service:
     name: nginx
-    state: started
+    state: "{{ state }}"
     enabled: yes
 
